@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="card card-rating">
+    <div class="card-content">
+      <div>
+        <img src="./images/icon-star.svg" class="card-rating-star" alt="Estrela">
+      </div>
+      <h3 class="card-rating-title">Como foi?</h3>
+      <p class="card-rating-text">Por favor, deixe-nos saber como fizemos com sua solicitação de suporte. Todos os comentários são apreciados para nos ajudar a melhorar a nossa oferta!</p>
+      <ul class="card-rating-list">
+        <li class="card-rating-item" value="1" role="button" id="um">1</li>
+        <li class="card-rating-item" value="2" role="button" id="dois">2</li>
+        <li class="card-rating-item" value="3" role="button" id="tres">3</li>
+        <li class="card-rating-item" value="4" role="button" id="quatro">4</li>
+        <li class="card-rating-item" value="5" role="button" id="cinco">5</li>
+      </ul>
+      <div class="">
+        <a href="#" class="card-rating-submit">ENVIAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-thank-you disable">
+    <div class="card-content-ty">
+      <img src="./images/illustration-thank-you.svg" alt="" class="card-image">
+      <span class="card-rating-span">Você selecionou <span class="card-thank-you-amount"></span> de 5</span>
+      <div class="card-rating-title">Obrigado!</div>
+      <div class="card-rating-text">Agradecemos que você reserve um tempo para dar uma classificação. Se você precisar de mais suporte, não hesite em entrar em contato!</div>
+    </div>
+  </div>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
